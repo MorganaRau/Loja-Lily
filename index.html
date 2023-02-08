@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html language="pt-br">
+   
+<head>
+    <meta name="viewport" content="width=device-width">
+    <meta charset="UTF-8">
+    <title>Teflis</title>
+    <link rel="stylesheet" type="text/css" href="css\styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body >
+
+ <header>
+     <!--logo-->
+     <div class="container">
+     <figure>
+         <img src="imagens\logo.png" alt="logo" height="75px" width="135px">
+         <figcaption>Lily</figcaption>
+     </figure>
+     <!--opcoes banner-->
+     <div > 
+   <nav> 
+       <div class="spacing">
+        <input type="text" placeholder="Procurar roupas">
+        <button><img src="imagens\search.png" width="20px" height="18px"> </button>
+       </div>
+     
+   
+     <div class="spacingTitle">
+       
+       <ul>
+           <li>
+            <a href="">Casual</a>
+           </li>
+           <li>
+              <a href="">Festa</a>
+           </li>
+           <li>
+               <a href="">Fantasia</a>
+           </li>
+           <li>
+            <a href="">Inverno</a>
+        </li>
+       </ul>
+    </div>
+      </div>
+        
+    
+   </nav>
+    </div>
+ </header>
+<!--produtos-->
+ <main class="container">
+<section>
+    <p>Lily sua loja virtual de roupas para Pets</p>
+   <ul class="categoria">
+     <li>
+        <a href="">Promoções</a>
+     </li>
+     <li>
+         <a href="">Frete Grátis</a>
+     </li>
+     <li>
+         <a href="">Entrega Hoje</a>
+     </li>
+     <li>
+         <a href="">Com desconto</a>
+     </li>
+   </ul>
+
+   <div class="secaoSlide"  >
+<ul>
+    <li>
+    <img class="slides" src="imagens/banner1.jpg" >
+</li>
+
+<li>
+    <img class="slides" src="imagens/banner2.jpg" >
+</li>
+  
+    <li>
+    <img class="slides" src="imagens/banner3.jpg" >
+</li>
+</ul>
+    </div>
+
+<!--opcoes de roupas -->
+<ul class="listaRoupa">
+    <li>
+        <figure>
+        <img src="imagens\img1.png"height="350px" width="365px">
+    </figure>
+    <h2>vestido merengue</h2>
+    <h3>34.56 R$</h3>
+  
+    </li>
+    <li>
+       <figure>
+        <img src="imagens\img2.jpg"height="350px" width="365px">
+    </figure>
+    <h2>vestido candy</h2>
+    <h3>37.56 R$</h3>
+    </li>
+    <li>
+        <figure>
+        <img src="imagens\img3.jpg" height="350px" width="365px">
+    </figure>
+    <h2>vestido bubblegum</h2>
+    <h3>54.56 R$</h3>
+    </li>
+    <li>
+        <figure>
+        <img src="imagens\img4.jpg" height="300px" width="365px">
+    </figure>
+    <h2>vestido pastelgoth</h2>
+    <h3>94.56 R$</h3>
+    </li>
+    <li>
+        <figure>
+        <img src="imagens\img5.jpg"height="350px" width="365px">
+    </figure>
+    <h2>vestido merengue aqua</h2>
+    <h3>45.56 R$</h3>
+    </li>
+    <li>
+       
+</ul>
+
+</section>
+
+
+ </main>
+
+ <script>
+    var slideIndex = 0;
+    carousel();
+    
+    function carousel() {
+        var i;
+        var x = document.getElementsByClassName("slides");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none"; 
+        }
+        slideIndex++;
+        if (slideIndex > x.length) {slideIndex = 1} 
+        x[slideIndex-1].style.display = "block"; 
+        setTimeout(carousel, 3000); 
+    }
+    </script>
+</body>
+
+</html>
